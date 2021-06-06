@@ -33,7 +33,7 @@
 
 ## About The Project
 
-Simple Node application to generate README file.
+Team Profile Generator is an application that allows users to build HTML page for their.
 
 ### Built With
 
@@ -47,12 +47,16 @@ Simple Node application to generate README file.
 ## Installation
 
 Run `npm install` to install the dependencies
+Run `npm install inquirer`
+Run `npm install jest`
 
 ## Usage
 
 Open the terminal
 Type `node index.js` to run the application.
 You will get a list of job postions choose one and you will get list of questions about the position you chose.
+
+<img src="/src/team-profile-generator-test.gif" alt="screenshot" >
 
 ## License
 
