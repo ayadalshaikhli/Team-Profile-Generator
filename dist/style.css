@@ -71,6 +71,31 @@ h3 {
   display: flex;
 }
 
+.button {
+  border: 2px solid #0fa;
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  /* margin: 25px; */
+}
+.button::after {
+  content: "GitHub";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #0fa;
+  transition: all 0.1s linear;
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+
 @keyframes pulsate {
   100% {
     text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,

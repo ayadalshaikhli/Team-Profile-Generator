@@ -4,7 +4,7 @@ const Engineer = require('./lib/engineer')
 const Intern = require('./lib/intern')
 const Manager = require("./lib/manager");
 // const util = require('util');
-const generateHTML = require("./dist/main.js");
+const generateHTML = require("./lib/main");
 
 
 // const writeFileAsync = util.promisify(fs.writeFile);
@@ -33,7 +33,7 @@ function newEmployee() {
             internInput();
             case"I dont't want to add any more team members":
             const htmlPageContent = generateHTML(employees)
-            fs.writeFile("./finalhtml/index.html", htmlPageContent, (err) =>
+            fs.writeFile("./dist/index.html", htmlPageContent, (err) =>
             err ? console.log(err) : console.log("successfully created")
             );
             break
