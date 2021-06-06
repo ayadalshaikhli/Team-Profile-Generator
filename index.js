@@ -7,7 +7,6 @@ const Manager = require("./lib/manager");
 const generateHTML = require("./lib/main");
 
 
-// const writeFileAsync = util.promisify(fs.writeFile);
 
 const employees = [];
 
@@ -31,6 +30,7 @@ function newEmployee() {
             break
             case"Intern":
             internInput();
+            break
             case"I dont't want to add any more team members":
             const htmlPageContent = generateHTML(employees)
             fs.writeFile("./dist/index.html", htmlPageContent, (err) =>
@@ -65,7 +65,7 @@ function managerInput () {
     },
 ];
  inquirer.prompt(managerPropmt).then(answers => {
-    const manager1 = new Manager(answers.name, answers.id, answers.email, answers.officenumber)
+    const manager1 = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
     employees.push(manager1)
     newEmployee()
 });
