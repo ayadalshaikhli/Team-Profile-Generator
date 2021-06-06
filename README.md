@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="/src/team-profile-generator.gif" alt="screenshot" >
+    <img src="/src/team-profile-generator-page.gif" alt="screenshot" >
 
   <h3 align="center">Team-Profile-Generator</h3>
 
@@ -56,6 +56,7 @@ Open the terminal
 Type `node index.js` to run the application.
 You will get a list of job postions choose one and you will get list of questions about the position you chose.
 
+<img src="/src/team-profile-generator.gif" alt="screenshot" >
 <img src="/src/team-profile-generator-test.gif" alt="screenshot" >
 
 ## License
